@@ -1,2 +1,47 @@
 # HTML
 Código HTML que cria uma lista de tarefas interativa com um pouco de JavaScript embutido.
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Lista de Tarefas</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f0f0;
+      padding: 30px;
+    }
+    #taskList {
+      list-style: none;
+      padding: 0;
+    }
+    #taskList li {
+      background: #fff;
+      margin-bottom: 10px;
+      padding: 10px;
+      border-left: 5px solid #0077cc;
+    }
+  </style>
+</head>
+<body>
+  <h1>Minha Lista de Tarefas</h1>
+  <input type="text" id="taskInput" placeholder="Digite uma tarefa" />
+  <button onclick="addTask()">Adicionar</button>
+
+  <ul id="taskList"></ul>
+
+  <script>
+    function addTask() {
+      const input = document.getElementById('taskInput');
+      const task = input.value.trim();
+      if (task !== '') {
+        const li = document.createElement('li');
+        li.textContent = task;
+        document.getElementById('taskList').appendChild(li);
+        input.value = '';
+      }
+    }
+  </script>
+</body>
+</html>
+Esse código cria uma página onde você pode digitar tarefas e adicioná-las dinamicamente a uma lista.
