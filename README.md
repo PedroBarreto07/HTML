@@ -46,4 +46,5 @@
   </script>
 </body>
 </html>
+
 Esse código cria uma página onde você pode digitar tarefas e adicioná-las dinamicamente a uma lista.
