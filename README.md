@@ -1,5 +1,7 @@
 # HTML
-Código HTML que cria uma lista de tarefas interativa com um pouco de JavaScript embutido.
+
+## Código HTML que cria uma lista de tarefas interativa com um pouco de JavaScript embutido.
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
